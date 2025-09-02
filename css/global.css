@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* ###################################################################################### */
+:root {
+  --bodyBG: #f6f6f6;
+  --bodyFont: #2b3445;
+  --blue: #9fc5ef;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +17,14 @@ html {
 }
 body {
   height: 4000px;
+}
+.border {
+  border-style: dashed;
+  border-color: red;
+}
+.flex {
+  display: flex;
+  align-items: center;
 }
 h1 {
   padding-bottom: 2000px;
@@ -25,7 +39,19 @@ h1 {
 a,
 button {
   all: unset;
+  display: inline-block;
+  transition: 0.2 s;
 }
+button:active,
+a:active {
+  scale: 0.9;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
 /* ############################################Side Bar########################################## */
 
 ::-webkit-scrollbar {
