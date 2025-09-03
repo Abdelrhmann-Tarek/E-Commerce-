@@ -3,7 +3,7 @@ header.flex {
   padding-inline: 10%;
   padding-top: 1.2rem;
 
-  & .sign-in {
+  & .links .sign-in {
     margin-inline: 1rem;
   }
   .sign-in,
@@ -47,8 +47,22 @@ header.flex {
       border-radius: 50%;
     }
   }
+}
 
-  /* logo */
-  .fa-bag-shopping {
+@media (width < 500px) {
+  header.flex {
+    justify-content: center;
+    padding-inline: 0;
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: none;
+    }
   }
 }
